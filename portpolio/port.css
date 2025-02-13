@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Base styles */
+.content {
+    background: linear-gradient(rgb(255, 0, 0, 0), #81e5eb);
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sathvik {
+    background-color: rgb(212, 204, 204);
+    height: 100%;
+    transition: transform 0.3s ease-in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.sathvikGo {
+    transform: translateX(-250px);
+}
+
+.sathvik ul {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    row-gap: 50px;
+}
+
+.sathvik li {
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.sathvik li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sathvik ul li:hover,
+.log1:hover,
+.s2:hover {
+    scale: 1.2;
+    text-shadow: 2px 2px 3px blue, rgb(0, 255, 234) 2px 2px 3px;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 8, 8);
+    text-decoration-thickness: 2px;
+}
+
+.main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.np {
+    margin: 144px auto;
+    height: 58vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.s2 img {
+    width: 100%;
+    height: auto;
+    max-width: 295px;
+    max-height: 55vh;
+    box-shadow: 0 0 10px rgb(5 224 241);
+    background: transparent;
+    border-radius: 30px 30px;
+}
+
+.s1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hellow {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 40px;
+}
+
+.moreabout {
+    font-size: 22px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 8px 21px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(95 115 115 / 93%);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: rgb(95 115 115 / 93%);
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+}
+
+.log1 {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.hun {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cancel {
+    position: absolute;
+    top: 5px;
+    left: 117px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hellow {
+        font-size: 50px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .moreabout {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .np {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s2 img {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .hellow {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 25px;
+    }
+
+    .moreabout {
+        font-size: 18px;
+    }
+
+    .buttons button {
+        font-size: 16px;
+    }
+
+    .sathvik {
+        transform: translateX(-433px,0px);
+    }
+
+    .sathvikGo {
+        transform: translatex(-250px,0px);
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .hellow {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .moreabout {
+        font-size: 16px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+    }
+
+    .np {
+        margin: 20px auto;
+        height: auto;
+        width: 100%;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+}}
